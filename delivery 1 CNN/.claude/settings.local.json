@@ -3,7 +3,9 @@
     "allow": [
       "Bash(python:*)",
       "Bash(pip show:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "Bash(cd \"C:\\\\Users\\\\gianluca\\\\Desktop\\\\deep-learning-notebooks\\\\delivery 1 CNN\" && python -c \"\nimport json\nwith open\\('P1-CNNs-part1.ipynb'\\) as f:\n    nb = json.load\\(f\\)\nfor i, cell in enumerate\\(nb['cells']\\):\n    if cell['cell_type'] != 'code': continue\n    for o in cell.get\\('outputs', []\\):\n        lines = o.get\\('text', []\\)\n        text = ''.join\\(lines\\) if isinstance\\(lines, list\\) else lines\n        if 'test_acc' in text or 'val_acc' in text:\n            print\\(f'=== Cell {i} ==='\\)\n            print\\(text[:2000]\\)\n\")",
+      "Bash(cd \"C:\\\\Users\\\\gianluca\\\\Desktop\\\\deep-learning-notebooks\\\\delivery 1 CNN\" && python -c \"\nimport json\nwith open\\('P1-CNNs-part1.ipynb', encoding='utf-8'\\) as f:\n    nb = json.load\\(f\\)\nfor i, cell in enumerate\\(nb['cells']\\):\n    if cell['cell_type'] != 'code': continue\n    for o in cell.get\\('outputs', []\\):\n        lines = o.get\\('text', []\\)\n        text = ''.join\\(lines\\) if isinstance\\(lines, list\\) else lines\n        if 'test_acc' in text or 'Epoch' in text:\n            print\\(f'=== Cell {i} ==='\\)\n            print\\(text[:3000]\\)\n            print\\(\\)\n\")"
     ]
   }
 }
