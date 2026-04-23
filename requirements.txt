@@ -10,3 +10,5 @@ pydotplus==2.0.2
 graphviz==0.21
 visualkeras==0.2.0
 pandas==3.0.2
+scikit-learn==1.8.0
+pydot
