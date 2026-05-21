@@ -4,3 +4,8 @@ __pycache__/
 .ipynb_checkpoints/
 *.pyc
 data/*
+
+# Delivery 3 local/heavy files
+Delivery 3 - GNN/data/
+Delivery 3 - GNN/P3-LatentSpace.pdf
+Delivery 3 - GNN/.ipynb_checkpoints/
